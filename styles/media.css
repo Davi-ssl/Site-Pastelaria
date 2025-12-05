@@ -1,23 +1,28 @@
+/*CONFIGURAÇÕES MEDIA/QUERYES*/
 
-@media screen and (min-width:480px) {
-    :root {
-        font-size: 18px;
-    }
+@media screen and (min-width: 480px) {
+  :root {
+    font-size: 18px;
+  }
 }
 
-@media screen and ( min-width: 576px) {
-    :root {
-        font-size: 20px;
-    }
+@media screen and (min-width: 576px) {
+  :root {
+    font-size: 20px;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    :root {
-        font-size: 22px;
-    }
+  :root {
+    font-size: 22px;
+  }
 }
 
 @media screen and (min-width: 992px) {
+  :root {
+    font-size: 14px;
+  }
+
   header .menu,
   label {
     display: none;
@@ -39,11 +44,42 @@
   }
 
   header .menu-g ul li a {
+    position: relative;
+    font-size: 1.5rem;
     text-decoration: none;
     color: white;
-    font-size: 1.5em;
     font-weight: bold;
+    transition: 0.4s;
+  }
+
+  header .menu-g ul li a::before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    background-color: var(--cor-secundaria);
+    left: 50%;
     transition: 0.3s;
+  }
+
+  header .menu-g ul li a::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    background-color: var(--cor-secundaria);
+    right: 50%;
+    transition: 0.3s;
+  }
+
+  header .menu-g ul li :hover::before {
+    width: 50%;
+  }
+
+  header .menu-g ul li :hover::after {
+    width: 50%;
   }
 
   header .menu-g ul li a:hover {
