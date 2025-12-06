@@ -85,7 +85,7 @@ header .menu ul {
 header .menu ul li a {
   position: relative;
   text-decoration: none;
-  color: white;
+  color: #1e1e1e;
   font-weight: 700;
   font-size: 1.5rem;
   line-height: 2.8;
