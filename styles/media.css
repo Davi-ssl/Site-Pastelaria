@@ -4,17 +4,27 @@
   :root {
     font-size: 18px;
   }
+  header .menu .img-p {
+    width: 120px;
+  }
 }
 
 @media screen and (min-width: 576px) {
   :root {
     font-size: 20px;
   }
+  header .menu .img-p {
+    width: 125px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   :root {
     font-size: 22px;
+  }
+
+  header .menu .img-p {
+    width: 130px;
   }
 }
 
