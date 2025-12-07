@@ -1,40 +1,14 @@
-/*CONFIGURAÇÕES MEDIA/QUERYES*/
-
-@media screen and (min-width: 480px) {
-  :root {
-    font-size: 18px;
-  }
-  header .menu .img-p {
-    width: 120px;
-  }
-}
-
-@media screen and (min-width: 576px) {
-  :root {
-    font-size: 20px;
-  }
-  header .menu .img-p {
-    width: 125px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  :root {
-    font-size: 22px;
-  }
-
-  header .menu .img-p {
-    width: 130px;
-  }
-}
-
 @media screen and (min-width: 992px) {
   :root {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   header .menu,
   label {
+    display: none;
+  }
+
+  header .header-logo, header button {
     display: none;
   }
 
@@ -44,7 +18,7 @@
     height: 100px;
     align-items: center;
     justify-content: space-evenly;
-    background-color: var(--cor-principal);
+    background-color: var(white);
   }
 
   header .menu-g ul {
@@ -55,7 +29,7 @@
 
   header .menu-g ul li a {
     position: relative;
-    font-size: 1.5rem;
+    font-size: 1.175rem;
     text-decoration: none;
     color: #1e1e1e;
     font-weight: bold;
@@ -98,7 +72,6 @@
 
   header .menu-g img {
     display: block;
-    width: 150px;
-    border-radius: 20px;
+    width: 8rem;
   }
 }
